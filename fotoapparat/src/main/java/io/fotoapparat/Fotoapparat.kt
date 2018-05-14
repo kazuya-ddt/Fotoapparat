@@ -242,7 +242,7 @@ class Fotoapparat
 
         executor.execute(
                 Operation(cancellable = true,
-                        function = device.getSelectedCamera()::stopPreview)
+                        function = device.getSelectedCamera()::startPreview)
         )
     }
 
@@ -254,7 +254,7 @@ class Fotoapparat
 
         executor.execute(
                 Operation(cancellable = true,
-                        function = device.getSelectedCamera()::startPreview)
+                        function = device.getSelectedCamera()::stopPreview)
         )
     }
 
